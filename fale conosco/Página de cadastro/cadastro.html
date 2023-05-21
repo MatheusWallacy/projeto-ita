@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="cadastro.css">
+    
+    
+</head>
+<body>
+
+ <!--MENU INICIAL-->   
+    <header>
+            <img class="logo" src="Logotipo.png" alt="Logotipo ITA">
+            <nav id="nav">
+                <button id = "btn-mobile">Menu</button>
+                <span id="burger"></span>
+                <ul id="menu">
+                    <li><a href="../../home/home.html">Home</a></li>
+                    <li><a href="../../empresa/empresa.html">Empresa</a></li>
+                    <li><a href="../../serviço/service.html">Serviço</a></li>
+                    <li><a href="../../galeria/galeria.html">Galeria</a></li>
+					<li><a href="../../feedback/feedback.html">Feedback</a></li>
+                    <li><a href="../../trabalhe conosco/trabalhe.html">Trabalhe conosco</a></li>
+                    <li><a href="../fale conosco/index ita.html">Fale conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+ <!--MENU FINAL--> 
+ 
+ 
+    </section>
+    <section id="Cadastro">
+      
+
+        <h2>CADASTRE-SE</h2>
+	<form>
+		<label for="name">NOME COMPLETO:</label>
+		<input type="text" id="name" name="name" required>
+		<br>
+		<label for="email">E-MAIL:</label>
+		<input type="email" id="email" name="email" required>
+		<br>
+		<label for="password">SENHA:</label>
+		<input type="password" id="password" name="password" required>
+		<br>
+		<label for="confirm-password">CONFIRME A SENHA:</label>
+		<input type="password" id="confirm-password" name="confirm-password" required>
+		<br>
+		<label for="birthday">DATA DE NASCIMENTO:</label>
+		<input type="date" id="birthday" name="birthday">
+		<br>
+		<label for="gender">GÊNERO:</label>
+		<select id="gender" name="gender">
+			<option value="">SELECIONE</option>
+			<option value="masculino">MASCULINO</option>
+			<option value="feminino">FEMININO</option>
+			<option value="outro">OUTRO</option>
+		</select>
+		<br>
+		<label for="terms-and-conditions">
+			<input type="checkbox" id="terms-and-conditions" name="terms-and-conditions" required>
+			Aceito os termos e condições.
+		</label>
+		<br>
+
+         <!--botão de cadastro-->  
+		<button type="submit">Cadastrar</button>
+	</form>
+
+<!--Final de página-->  
+
+    <footer>
+        <p>© 2023 ITA - Information Technology Anytime</p>
+    </footer>
+
+    
+
+<script src="script.js" > </script>
+
+        
+</body>
+</html>

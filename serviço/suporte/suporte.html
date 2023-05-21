@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte | ITA</title>
+    <link rel="stylesheet" href="suporte.css">
+    <link rel="icon" href="../img/icon.png">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../img/Logotipo.png" alt="">
+        <nav class="container">
+            <ul class="box">
+                <li><a href="../../home/home.html">Home</a></li>
+                <li><a href="../../empresa/empresa.html">Empresa</a></li>
+                <li><a href="../service.html">Serviço</a></li>
+                <li><a href="../../galeria/galeria.html">Galeria</a></li>
+                <li><a href="../../feedback/feedback.html">Feedback</a></li>
+                <li><a href="../../trabalhe conosco/trabalhe.html">Trabalhe conosco</a></li>
+                <li><a href="../../fale conosco/fale conosco/index ita.html">Fale conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="caixa">
+        <section class="square">
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <p>Dados para contato</p>
+                <br>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" placeholder=" Digite aqui seu nome" autocomplete="off" required>
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome" placeholder=" Digite aqui seu sobrenome" autocomplete="off" required>
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" placeholder=" Digite aqui seu telefone" autocomplete="off" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder=" Digite aqui seu email" autocomplete="off" required>
+                <br>
+                <br>
+                <br>
+                <p>Assunto</p>
+                <select name="opcao" id="selecione" required>
+                    <option selected disabled value="">Selecione</option>
+                    <option value="software">Software</option>
+                    <option value="hardware">Hardware</option>
+                    <option value="consultoria">Consultoria em TI</option>
+                    <option value="hospedagem">Hospedagem de sites e/ou aplicativos</option>
+                    <option value="backup">Backup e recuperação de ddados</option>
+                    <option value="seguranca">Segurança e cibernética</option>
+                    <option value="other">Outros...</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <p>Descrição detalhada do problema ou dúvida</p>
+                <textarea name="textoproblema" id="textproblem" cols="150" rows="20"
+                    placeholder="Digite aqui o seu problema/dúvida" required></textarea>
+                <label for="problema"></label>
+                <br>
+                <br>
+                <br>
+                <p>Texto erro <b>(opcional)</b></p>
+                <textarea name="textoerro" id="errortexto" cols="150" rows="10"
+                    placeholder="Digite o texto do erro que aparece"></textarea>
+                <label for="erro"></label>
+                <br>
+                <br>
+                <button type="submit">Enviar formulário</button>
+
+                <input type="hidden" name="accessKey" value="4f71dfdb-efa4-4bda-bf67-9e23507d54d8">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/servi%C3%A7o/suporte/obrigado/obrigado.html">
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 ITA - Information Technology Anytime</p>
+    </footer>
+
+</body>
+
+</html>

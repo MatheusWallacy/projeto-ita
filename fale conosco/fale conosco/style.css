@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: rgb(2, 2, 5);
+}
+
+header {
+  box-sizing: border-box;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(0, 0, 3);
+  display: flex;
+  align-items: center;
+  color: rgb(175, 168, 168);
+  justify-content: space-between;
+
+}
+
+#nav {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  background-color: rgb(0, 0, 3);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+
+#menu {
+  display: inline-block;
+  list-style-type: none;
+}
+
+#menu li {
+  float: left;
+  margin: 5px;
+}
+
+#menu li a {
+  text-decoration: none;
+  color: rgb(255, 240, 240);
+  padding: 0px 10px;
+}
+
+#menu li a:hover {
+  color: #ec0955;
+}
+
+.logo {
+  width: 190px;
+  height: 70px;
+  position: absolute;
+  left: 15px;
+  z-index: 1;
+}
+
+
+h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.service:hover {
+  background-color: rgb(3, 3, 10);
+  border: 1px solid #ec0955;
+  color: #ec0955;
+}
+
+.img-sup {
+  margin: 15px;
+  width: 170px;
+  height: 170px;
+}
+
+.img-liv {
+  padding-top: 15px;
+  height: 200px;
+  width: 200px;
+}
+
+a {
+  text-decoration: none;
+  color: azure;
+}
+
+footer {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 0px;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(0, 0, 3);
+  color: azure;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.funcionamento {
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.funcionamento p {
+  color: #ec0955;
+  font-size: 12px;
+}
+
+.funcionamento a:hover {
+  border-bottom: solid 2px #ec0955;
+  ;
+  color: #ec0955;
+  ;
+}
+
+#fale-conosco {
+  background-color: rgb(2, 2, 5);
+  padding: 40px;
+  color: #ddd;
+  justify-content: center;
+
+
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ec0955;
+}
+
+.contato-ita {
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  text-transform: uppercase;
+
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 200px;
+}
+
+button[type="submit"] {
+  background-color: #ec0955;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #a7073c;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+
+
+@media (max-width:924px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    right: 0px;
+    background: #a7073c;
+    height: 50vh;
+    z-index: 1000;
+    transition: .6s;
+    visibility: hidden;
+    overflow: hidden;
+  }
+
+  #nav.active #menu {
+    height: calc(50vh - 70px);
+    visibility: visible;
+    overflow: auto;
+
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, .05);
+    display: block;
+
+  }
+
+
+  #btn-mobile {
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    color: #ec0955;
+    cursor: pointer;
+    gap: .5rem;
+
+  }
+
+  #burger {
+    display: block;
+    width: 20px;
+    border-top: solid;
+  }
+
+  #burger::after,
+  #burger::before {
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    content: '';
+    display: block;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+  }
+
+  #nav.active #burger {
+    border-top-color: transparent;
+  }
+
+  #nav.active #burger::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #burger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+
+}
